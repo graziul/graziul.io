@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 20px; font-weight: 600; fill: #111827; }
+      .subtitle { font-size: 13px; fill: #6B7280; }
+      .cause-label { font-size: 13px; fill: #111827; font-weight: 500; }
+      .cause-example { font-size: 11px; fill: #6B7280; font-style: italic; }
+      .bar-value { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+      .bar-percent { font-size: 11px; fill: #FFFFFF; opacity: 0.9; }
+      .axis-label { font-size: 11px; fill: #6B7280; }
+      .footer { font-size: 11px; fill: #6B7280; font-style: italic; }
+    </style>
+  </defs>
+
+  <rect width="900" height="560" fill="#FFFFFF"/>
+
+  <!-- Title + subtitle -->
+  <text x="60" y="36" class="title">Why AI governance breaks — 21 documented cases</text>
+  <text x="60" y="58" class="subtitle">Structural causes ranked by recurrence. Each cause maps to a specific diagnostic question. 14 of 21 cases failed within 6–18 months.</text>
+
+  <!-- Plot area begins at y=100, each bar row is 52px tall -->
+
+  <!-- ========= Row 1 (rank 1, 13/21 cases — the dominant pattern) ========= -->
+  <text x="60" y="116" class="cause-label">1 · External reference moved (framework, regulation, vendor, model)</text>
+  <text x="60" y="132" class="cause-example">e.g., Italian ChatGPT ban; iTutor EEOC; Mata v. Avianca; Workday hiring</text>
+  <rect x="60"  y="138" width="498" height="22" fill="#991B1B" rx="2"/>
+  <text x="75"  y="154" class="bar-value">13 / 21</text>
+  <text x="130" y="154" class="bar-percent">62%</text>
+
+  <!-- ========= Row 2 (rank 2, 10/21 — tied) ========= -->
+  <text x="60" y="185" class="cause-label">2 · Generic policy couldn't handle edge case</text>
+  <text x="60" y="201" class="cause-example">e.g., Amazon recruiting AI; Dutch SyRI; RealPage DOJ action</text>
+  <rect x="60"  y="207" width="383" height="22" fill="#B91C1C" rx="2"/>
+  <text x="75"  y="223" class="bar-value">10 / 21</text>
+  <text x="130" y="223" class="bar-percent">48%</text>
+
+  <!-- ========= Row 3 (tied for rank 2, 10/21) ========= -->
+  <text x="60" y="254" class="cause-label">3 · Feedback mechanism absent or performative</text>
+  <text x="60" y="270" class="cause-example">e.g., Optum racial bias; Horizon Post Office; UK A-levels Ofqual</text>
+  <rect x="60"  y="276" width="383" height="22" fill="#DC2626" rx="2"/>
+  <text x="75"  y="292" class="bar-value">10 / 21</text>
+  <text x="130" y="292" class="bar-percent">48%</text>
+
+  <!-- ========= Row 4 (rank 4, 9/21) ========= -->
+  <text x="60" y="323" class="cause-label">4 · Accountability locus unclear in crisis</text>
+  <text x="60" y="339" class="cause-example">e.g., OpenAI board upheaval; Tay; Zillow iBuying shutdown</text>
+  <rect x="60"  y="345" width="345" height="22" fill="#EA580C" rx="2"/>
+  <text x="75"  y="361" class="bar-value">9 / 21</text>
+  <text x="115" y="361" class="bar-percent">43%</text>
+
+  <!-- ========= Row 5 (tied rank 5, 7/21) ========= -->
+  <text x="60" y="392" class="cause-label">5 · Stakeholders excluded from decision loop</text>
+  <text x="60" y="408" class="cause-example">e.g., NYC AEDT enforcement gap; Toeslagenaffaire; Loomis/COMPAS</text>
+  <rect x="60"  y="414" width="268" height="22" fill="#F59E0B" rx="2"/>
+  <text x="75"  y="430" class="bar-value">7 / 21</text>
+  <text x="115" y="430" class="bar-percent">33%</text>
+
+  <!-- ========= Row 6 (tied rank 5, 7/21) ========= -->
+  <text x="60" y="461" class="cause-label">6 · Deployed scope exceeded governance scope</text>
+  <text x="60" y="477" class="cause-example">e.g., Gemini image gen; Meta moderation rollback; Tesla Autopilot</text>
+  <rect x="60"  y="483" width="268" height="22" fill="#EAB308" rx="2"/>
+  <text x="75"  y="499" class="bar-value">7 / 21</text>
+  <text x="115" y="499" class="bar-percent">33%</text>
+
+  <!-- No 7th bar row to keep it clean — 7th cause is summarized in footer -->
+
+  <!-- Scale markers -->
+  <line x1="60" y1="525" x2="60" y2="530" stroke="#6B7280"/>
+  <text x="60" y="543" class="axis-label" text-anchor="middle">0</text>
+
+  <line x1="253" y1="525" x2="253" y2="530" stroke="#6B7280"/>
+  <text x="253" y="543" class="axis-label" text-anchor="middle">25%</text>
+
+  <line x1="445" y1="525" x2="445" y2="530" stroke="#6B7280"/>
+  <text x="445" y="543" class="axis-label" text-anchor="middle">50%</text>
+
+  <line x1="638" y1="525" x2="638" y2="530" stroke="#6B7280"/>
+  <text x="638" y="543" class="axis-label" text-anchor="middle">75%</text>
+
+  <line x1="830" y1="525" x2="830" y2="530" stroke="#6B7280"/>
+  <text x="830" y="543" class="axis-label" text-anchor="middle">100%</text>
+
+  <!-- Horizontal baseline -->
+  <line x1="60" y1="525" x2="830" y2="525" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- 7th cause footer callout -->
+  <text x="60" y="557" class="footer">+ Rank 7: external trigger overwhelm + escalation gridlock (5 / 21) — typically clustered with causes 1 and 4</text>
+</svg>

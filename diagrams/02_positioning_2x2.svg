@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 20px; font-weight: 600; fill: #111827; }
+      .subtitle { font-size: 13px; fill: #6B7280; }
+      .axis-label { font-size: 14px; font-weight: 600; fill: #111827; }
+      .axis-sublabel { font-size: 11px; fill: #6B7280; font-style: italic; }
+      .quadrant-label { font-size: 13px; font-weight: 600; }
+      .vendor-label { font-size: 11px; fill: #374151; }
+      .vendor-label-empty { font-size: 12px; fill: #9CA3AF; font-style: italic; }
+      .chris-label { font-size: 14px; font-weight: 700; fill: #FFFFFF; }
+      .chris-sublabel { font-size: 11px; fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect width="900" height="680" fill="#FFFFFF"/>
+
+  <!-- Title + subtitle -->
+  <text x="60" y="36" class="title">The competitive landscape — and the empty quadrant</text>
+  <text x="60" y="58" class="subtitle">AI governance vendors plotted by temporal stance × analytical focus. Chris's position is the unclaimed upper-right.</text>
+
+  <!-- Axis lines (crossing at center) -->
+  <line x1="90" y1="360" x2="820" y2="360" stroke="#9CA3AF" stroke-width="1.5"/>
+  <line x1="455" y1="100" x2="455" y2="620" stroke="#9CA3AF" stroke-width="1.5"/>
+
+  <!-- Quadrant backgrounds (light tints) -->
+  <!-- Top-left (snapshot × decision-process) -->
+  <rect x="90"  y="100" width="365" height="260" fill="#FEF3C7" fill-opacity="0.25"/>
+  <!-- Top-right (continuous × decision-process) — Chris's empty quadrant -->
+  <rect x="455" y="100" width="365" height="260" fill="#D1FAE5" fill-opacity="0.5"/>
+  <!-- Bottom-left (snapshot × capability) -->
+  <rect x="90"  y="360" width="365" height="260" fill="#F3F4F6" fill-opacity="0.4"/>
+  <!-- Bottom-right (continuous × capability) -->
+  <rect x="455" y="360" width="365" height="260" fill="#DBEAFE" fill-opacity="0.4"/>
+
+  <!-- Redraw axis lines on top for visibility -->
+  <line x1="90" y1="360" x2="820" y2="360" stroke="#4B5563" stroke-width="1.5"/>
+  <line x1="455" y1="100" x2="455" y2="620" stroke="#4B5563" stroke-width="1.5"/>
+
+  <!-- Axis arrows and labels -->
+  <!-- X-axis (horizontal): Snapshot ← → Continuous -->
+  <polygon points="90,360 102,356 102,364" fill="#4B5563"/>
+  <polygon points="820,360 808,356 808,364" fill="#4B5563"/>
+  <text x="110" y="640" class="axis-label">Snapshot</text>
+  <text x="110" y="656" class="axis-sublabel">point-in-time assessment</text>
+  <text x="800" y="640" class="axis-label" text-anchor="end">Continuous</text>
+  <text x="800" y="656" class="axis-sublabel" text-anchor="end">ongoing, event-triggered</text>
+
+  <!-- Y-axis (vertical): Decision-process ↑ ↓ Capability-focus -->
+  <polygon points="455,100 451,112 459,112" fill="#4B5563"/>
+  <polygon points="455,620 451,608 459,608" fill="#4B5563"/>
+  <text x="845" y="110" class="axis-label" text-anchor="start">Decision-process</text>
+  <text x="845" y="126" class="axis-sublabel" text-anchor="start">how the org decides</text>
+  <text x="845" y="612" class="axis-label" text-anchor="start">Capability</text>
+  <text x="845" y="628" class="axis-sublabel" text-anchor="start">what the system does</text>
+
+  <!-- ============ Quadrant labels ============ -->
+
+  <!-- Top-left label -->
+  <text x="105" y="128" class="quadrant-label" fill="#92400E">Snapshot × Decision-process</text>
+  <text x="105" y="144" class="axis-sublabel" fill="#92400E">Audits decisions once, documents them</text>
+
+  <!-- Top-right label -->
+  <text x="470" y="128" class="quadrant-label" fill="#065F46">Continuous × Decision-process</text>
+  <text x="470" y="144" class="axis-sublabel" fill="#065F46">The unclaimed territory</text>
+
+  <!-- Bottom-left label -->
+  <text x="105" y="388" class="quadrant-label" fill="#4B5563">Snapshot × Capability</text>
+  <text x="105" y="404" class="axis-sublabel" fill="#4B5563">One-shot technical audits</text>
+
+  <!-- Bottom-right label -->
+  <text x="470" y="388" class="quadrant-label" fill="#1E40AF">Continuous × Capability</text>
+  <text x="470" y="404" class="axis-sublabel" fill="#1E40AF">Platform monitoring, ML-ops</text>
+
+  <!-- ============ Vendor plots ============ -->
+
+  <!-- Top-left vendors -->
+  <g class="vendor-label">
+    <circle cx="160" cy="180" r="4" fill="#92400E"/>
+    <text x="170" y="184">Ada Lovelace AIA (NHS)</text>
+
+    <circle cx="160" cy="210" r="4" fill="#92400E"/>
+    <text x="170" y="214">Microsoft RAI Impact Assessment</text>
+
+    <circle cx="160" cy="240" r="4" fill="#92400E"/>
+    <text x="170" y="244">Canadian AIA</text>
+
+    <circle cx="160" cy="270" r="4" fill="#92400E"/>
+    <text x="170" y="274">BABL AI (audit arm)</text>
+
+    <circle cx="160" cy="300" r="4" fill="#92400E"/>
+    <text x="170" y="304">Luminos / ZwillGen</text>
+
+    <circle cx="160" cy="330" r="4" fill="#92400E"/>
+    <text x="170" y="334">NIST AI RMF (as typically used)</text>
+  </g>
+
+  <!-- Top-right vendors (mostly empty — Chris's position here) -->
+  <g class="vendor-label-empty">
+    <circle cx="525" cy="210" r="3" fill="#D1D5DB"/>
+    <text x="535" y="214">Parity (Chowdhury) — short-term only</text>
+  </g>
+
+  <!-- Chris's position: big star + callout -->
+  <!-- Star at (680, 250) -->
+  <g transform="translate(680 250)">
+    <!-- Filled circle background for the star -->
+    <circle r="38" fill="#065F46"/>
+    <circle r="38" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <!-- Star shape inside -->
+    <path d="M 0 -20 L 6 -6 L 20 -6 L 9 3 L 13 17 L 0 9 L -13 17 L -9 3 L -20 -6 L -6 -6 Z"
+          fill="#FFFFFF"/>
+  </g>
+  <text x="680" y="310" class="chris-label" text-anchor="middle" fill="#065F46">Chris's position</text>
+  <text x="680" y="326" class="axis-sublabel" text-anchor="middle" fill="#065F46">Governance shelf-life advisor</text>
+  <text x="680" y="340" class="axis-sublabel" text-anchor="middle" fill="#065F46" font-style="italic">continuous × decision-process</text>
+
+  <!-- Bottom-left vendors -->
+  <g class="vendor-label">
+    <circle cx="160" cy="440" r="4" fill="#4B5563"/>
+    <text x="170" y="444">AI Fairness 360 (IBM)</text>
+
+    <circle cx="160" cy="470" r="4" fill="#4B5563"/>
+    <text x="170" y="474">Fairlearn / RAI Toolbox (MS)</text>
+
+    <circle cx="160" cy="500" r="4" fill="#4B5563"/>
+    <text x="170" y="504">Stanford FMTI</text>
+
+    <circle cx="160" cy="530" r="4" fill="#4B5563"/>
+    <text x="170" y="534">Singapore AI Verify</text>
+
+    <circle cx="160" cy="560" r="4" fill="#4B5563"/>
+    <text x="170" y="564">OpenAI / Google system cards</text>
+  </g>
+
+  <!-- Bottom-right vendors -->
+  <g class="vendor-label">
+    <circle cx="525" cy="440" r="4" fill="#1E40AF"/>
+    <text x="535" y="444">Credo AI</text>
+
+    <circle cx="525" cy="470" r="4" fill="#1E40AF"/>
+    <text x="535" y="474">Holistic AI</text>
+
+    <circle cx="525" cy="500" r="4" fill="#1E40AF"/>
+    <text x="535" y="504">Arthur AI / Trustible</text>
+
+    <circle cx="525" cy="530" r="4" fill="#1E40AF"/>
+    <text x="535" y="534">OneTrust AI module</text>
+
+    <circle cx="525" cy="560" r="4" fill="#1E40AF"/>
+    <text x="535" y="564">Anthropic RSP / OpenAI Preparedness</text>
+
+    <circle cx="525" cy="590" r="4" fill="#1E40AF"/>
+    <text x="535" y="594">EU AI Act Art. 9 + 17 (as operationalized)</text>
+  </g>
+
+  <!-- Footer callout -->
+  <text x="455" y="670" class="axis-sublabel" text-anchor="middle">
+    Empty quadrant verified April 2026 via competitive research (see research/03_competitors.md)
+  </text>
+</svg>

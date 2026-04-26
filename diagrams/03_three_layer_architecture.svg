@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 20px; font-weight: 600; fill: #111827; }
+      .subtitle { font-size: 13px; fill: #6B7280; }
+      .layer-label { font-size: 18px; font-weight: 700; fill: #FFFFFF; }
+      .layer-sub { font-size: 13px; fill: #FFFFFF; opacity: 0.9; }
+      .price { font-size: 16px; font-weight: 700; fill: #FFFFFF; }
+      .volume { font-size: 11px; fill: #FFFFFF; opacity: 0.8; }
+      .annotation { font-size: 12px; fill: #374151; }
+      .annotation-title { font-size: 12px; font-weight: 600; fill: #111827; }
+      .arrow-label { font-size: 11px; fill: #6B7280; font-style: italic; }
+    </style>
+  </defs>
+
+  <rect width="900" height="620" fill="#FFFFFF"/>
+
+  <!-- Title + subtitle -->
+  <text x="60" y="36" class="title">Three-layer business architecture</text>
+  <text x="60" y="58" class="subtitle">Volume narrows down, revenue-per-engagement grows up. Each layer qualifies the next.</text>
+
+  <!-- ============ Layer 1: Free Diagnostic (top — widest) ============ -->
+  <!-- Trapezoid: (200, 100) to (700, 100) widening down -->
+  <polygon points="180,100 720,100 680,190 220,190"
+           fill="#1E40AF" stroke="#1E3A8A" stroke-width="1"/>
+  <text x="450" y="130" class="layer-label" text-anchor="middle">LAYER 1 · Free Diagnostic</text>
+  <text x="450" y="155" class="layer-sub" text-anchor="middle">Governance Shelf-Life self-assessment — 10 questions, 15 minutes</text>
+  <text x="450" y="178" class="layer-sub" text-anchor="middle" font-style="italic">Gives value, demonstrates methodology, filters qualified buyers</text>
+
+  <!-- Layer 1 side annotations -->
+  <text x="755" y="135" class="annotation-title">Price</text>
+  <text x="755" y="152" class="annotation">$0</text>
+  <text x="755" y="170" class="arrow-label">(loss leader)</text>
+
+  <text x="100" y="135" class="annotation-title" text-anchor="end">Volume</text>
+  <text x="100" y="152" class="annotation" text-anchor="end">1,000+/yr</text>
+  <text x="100" y="170" class="arrow-label" text-anchor="end">at scale</text>
+
+  <!-- Arrow down -->
+  <path d="M 450 200 L 450 220" stroke="#4B5563" stroke-width="1.5"/>
+  <polygon points="450,220 446,210 454,210" fill="#4B5563"/>
+  <text x="460" y="218" class="arrow-label">5–10% convert</text>
+
+  <!-- ============ Layer 2: Productized Delivery (middle) ============ -->
+  <!-- Trapezoid narrower -->
+  <polygon points="245,230 655,230 615,340 285,340"
+           fill="#059669" stroke="#065F46" stroke-width="1"/>
+  <text x="450" y="260" class="layer-label" text-anchor="middle">LAYER 2 · Diagnostic-to-Blueprint</text>
+  <text x="450" y="285" class="layer-sub" text-anchor="middle">4 deliverables: risk map · RACI · governance framework · roadmap</text>
+  <text x="450" y="305" class="layer-sub" text-anchor="middle">Semi-automated via Claude pipeline + Chris's review pass</text>
+  <text x="450" y="325" class="layer-sub" text-anchor="middle" font-style="italic">Demonstrates methodology at cost; qualifies buyers for Layer 3</text>
+
+  <!-- Layer 2 side annotations -->
+  <text x="755" y="265" class="annotation-title">Price</text>
+  <text x="755" y="282" class="annotation">$750 – $5,000</text>
+  <text x="755" y="300" class="arrow-label">by segment:</text>
+  <text x="755" y="315" class="arrow-label">$750 solo/NP</text>
+  <text x="755" y="328" class="arrow-label">$1,500 SME</text>
+  <text x="755" y="341" class="arrow-label">$3,500 mid-ent.</text>
+  <text x="755" y="354" class="arrow-label">$5,000 foundation</text>
+
+  <text x="100" y="265" class="annotation-title" text-anchor="end">Volume</text>
+  <text x="100" y="282" class="annotation" text-anchor="end">50–150/yr</text>
+  <text x="100" y="300" class="arrow-label" text-anchor="end">at scale</text>
+
+  <!-- Arrow down -->
+  <path d="M 450 350 L 450 370" stroke="#4B5563" stroke-width="1.5"/>
+  <polygon points="450,370 446,360 454,360" fill="#4B5563"/>
+  <text x="460" y="368" class="arrow-label">12–18% convert</text>
+
+  <!-- ============ Layer 3: High-touch (bottom — narrowest, tallest) ============ -->
+  <polygon points="310,380 590,380 570,530 330,530"
+           fill="#B45309" stroke="#92400E" stroke-width="1"/>
+  <text x="450" y="410" class="layer-label" text-anchor="middle">LAYER 3 · High-touch</text>
+  <text x="450" y="432" class="layer-sub" text-anchor="middle">Custom advisory · fractional officer · licensing</text>
+  <text x="450" y="454" class="layer-sub" text-anchor="middle">Strategic engagements, embedded advisory,</text>
+  <text x="450" y="472" class="layer-sub" text-anchor="middle">methodology licensing to consulting firms</text>
+  <text x="450" y="498" class="layer-sub" text-anchor="middle" font-style="italic">Where the value concentrates</text>
+  <text x="450" y="520" class="layer-sub" text-anchor="middle" font-style="italic">— capacity-limited, not scale-limited</text>
+
+  <!-- Layer 3 side annotations -->
+  <text x="755" y="415" class="annotation-title">Price</text>
+  <text x="755" y="432" class="annotation">$12K – $200K+</text>
+  <text x="755" y="450" class="arrow-label">T3-Implement: $12–18K</text>
+  <text x="755" y="464" class="arrow-label">T3-Program: $25–40K</text>
+  <text x="755" y="478" class="arrow-label">Fractional: $8–12K/mo</text>
+  <text x="755" y="492" class="arrow-label">Public-sector: $40–150K</text>
+  <text x="755" y="506" class="arrow-label">Firm license: $25–200K/yr</text>
+
+  <text x="100" y="415" class="annotation-title" text-anchor="end">Volume</text>
+  <text x="100" y="432" class="annotation" text-anchor="end">5–15/yr</text>
+  <text x="100" y="450" class="arrow-label" text-anchor="end">at scale</text>
+
+  <!-- Side axis showing the inverse relationship -->
+  <g stroke="#D1D5DB" stroke-width="1.5">
+    <line x1="75" y1="100" x2="75" y2="530" stroke-dasharray="3,3"/>
+  </g>
+  <text x="55" y="310" class="arrow-label" text-anchor="middle" transform="rotate(-90 55 310)">← volume decreases as price increases →</text>
+
+  <!-- Footer callout: conversion math -->
+  <g transform="translate(60 560)">
+    <rect width="780" height="48" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1" rx="4"/>
+    <text x="15" y="20" class="annotation-title">Conversion math (steady state)</text>
+    <text x="15" y="38" class="annotation">1,000 diagnostics → 75 T2 engagements @ $1,500 avg = $112K · 9 T3 engagements @ $30K avg = $270K · plus 1–2 fractional retainers</text>
+  </g>
+</svg>
