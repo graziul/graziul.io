@@ -1,6 +1,2 @@
 User-agent: *
 Allow: /
-Disallow: /404
-Disallow: /draft/
-
-Sitemap: https://graziul.io/sitemap-index.xml
